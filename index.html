@@ -4,12 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Stylesheet -->
+    <!-- Stylesheet and FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/11347facfb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Music Player API</title>
 </head>
 <body>
-    
+    <h1>Trevitray DEMO music player</h1>
+
+    <div class="music-container" id="music-container">
+        <!-- Shows artists data and progress bar -->
+        <div class="music-info">
+            <h4 id="title"></h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <!-- Song -->
+        <audio 
+            src="./assets/music/01 Heads Or Tales (Prod. Death Star).mp3" 
+            id="audio">
+        </audio>
+
+        <!-- Artwork Container and display -->
+        <div class="img-container">
+            <img src="./assets/img/Death Star.jpg" 
+            alt="Death Star also known as Trevitray">
+        </div>
+
+        <!-- Navigation Display and Play Controls -->
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>
     <!-- Scripts -->
     <script src="./assets/js/app.js"></script>
 </body>
